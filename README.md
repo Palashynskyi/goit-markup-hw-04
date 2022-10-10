@@ -1,2 +1,2 @@
-# goit-markup-hw-04
-clone goit-markup-hw-03 for update 
+# goit-markup-hw-02
+Home work for goit study
