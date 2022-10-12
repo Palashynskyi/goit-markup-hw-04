@@ -167,10 +167,9 @@ body {
 }
 
 .item {
-    display:block;
+    display:flex;
     padding-top: 32px;
     padding-bottom: 32px;
-
     color: var(--primary-text-color); 
   
     font-family: 'Roboto';
@@ -180,6 +179,13 @@ body {
     line-height: 1.1721;
     letter-spacing: 0.02em;
 }
+
+.item>.icon {
+    display: flex;
+    margin-right: 10px;
+}
+
+
 
 .item:hover, .item:focus {
     color: var(--accent-color);
@@ -431,45 +437,23 @@ img {
 .icon-list {
     margin-top: 16px;
     justify-content: center;
+    display: flex;
 }
 
-.icon-instagram {
-    display: inline-block;
-    width: 44px;
-    height: 44px;
+.icon-social {
+    display: flex;
     margin-right: 10px;
-    background-image: url(../images/instagram.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.icon-twitter {
-    display: inline-block;
+    color: var(--icon-prymary-color);
     width: 44px;
     height: 44px;
-    margin-right: 10px;
-    background-image: url(../images/twitter.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
-.icon-facebook {
-    display: inline-block;
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
-    background-image: url(../images/facebook.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.icon-linkedin {
-    display: inline-block;
-    width: 44px;
-    height: 44px;
-    background-image: url(../images/linkedin.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+.icon-social:hover, .icon-social:focus {
+    color: var(--second-btn-color);
+    background-color: var(--accent-color);
 }
 
 /* Clients */
@@ -511,15 +495,6 @@ img {
 .icon {
 fill: currentColor;
 }
-
-/* 
-.icon-client {
-    display: inline-block;
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-} */
 
 /* Footer */
 
