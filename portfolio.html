@@ -14,34 +14,34 @@
 
   <body>
     <!-- Header -->
-    <header>
-      <div class="header-line">
-        <div class="container">
-          <div class="flex">
-            <nav class="flex">
-              <a href="./index.html" class="header-logo link flex"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
-              <ul class="nav list flex">
-                <li>
-                  <a href="./index.html" class="nav-link flex link">Студія</a>
-                </li>
-                <li>
-                  <a href="./portfolio.html" class="nav-link flex link current">Портфоліо</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link flex link">Контакти</a>
-                </li>
-              </ul>
-            </nav>
-            <!-- Header contacts -->
-            <ul class="auth-nav list flex">
+    <header class="header-line">
+      <div class="container">
+        <div class="flex">
+          <nav class="flex">
+            <a href="./index.html" class="header-logo link flex"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+            <ul class="nav list flex">
               <li>
-                <a href="mailto:info@devstudio.com" class="item flex link">info@devstudio.com</a>
+                <a href="./index.html" class="nav-link flex link current">Студія</a>
               </li>
               <li>
-                <a href="tel:+380961111111" class="item flex link">+38 096 111 11 11</a>
+                <a href="./portfolio.html" class="nav-link flex link">Портфоліо</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link flex link">Контакти</a>
               </li>
             </ul>
-          </div>
+          </nav>
+          <!-- Header contacts -->
+          <ul class="auth-nav list flex">
+            <li>
+              <a href="mailto:info@devstudio.com" class="item flex link"><svg class="icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="item flex link">  <svg class="icon" width="10" height="16">
+                <use href="./images/sprite.svg#icon-smartphone"></use></svg> +38 096 111 11 11</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -145,10 +145,11 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
+     <footer class="footer">
       <div class="footer-box">
-        <div class="container">
-          <div class="footer-logo">
+        <div class="container footer-container">
+          <div class="footer-box-left">
+            <div class="footer-logo">
             <a href="./index.html" class="link"><span class="footer-logo-web">Web</span><span class="logo-alter">Studio</span></a>
           </div>
           <address>
@@ -164,7 +165,21 @@
               </li>
             </ul>
           </address>
-        </div>
+          </div>
+          <div class="footer-box-right">
+            <div class="joined">
+          <h2 class="joined-tittle">Приєднуйтесь</h2>
+           <ul class="icon-footer-list flex list">
+                    <li><a href="" class="icon-footer-link"><svg class="icon" width="20" height="20"><use href="./images/sprite.svg#icon-instagram"></use>
+                </svg></a></li>
+                    <li><a href="" class="icon-footer-link"><svg class="icon" width="20" height="20"><use href="./images/sprite.svg#icon-twitter"></use>
+                </svg></a></li>
+                    <li><a href="" class="icon-footer-link"><svg class="icon" width="20" height="20"><use href="./images/sprite.svg#icon-facebook"></use>
+                </svg></a></li>
+                    <li><a href="" class="icon-footer-link"><svg class="icon" width="20" height="20"><use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg></a></li>
+                  </ul>
+          </div>
       </div>
     </footer>
   </body>

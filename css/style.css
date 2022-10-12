@@ -20,6 +20,7 @@ body {
     --work-card-border-color:#EEEEEE;
     --features-card-bg: #F5F4FA;
     --icon-prymary-color: #AFB1B8; 
+    --footer-link-bg-color: rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -458,7 +459,10 @@ img {
 
 /* Clients */
 
-.icon-client {
+.icon-client-link:hover, .icon-client-link:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    fill: currentColor;
 }
 .clients-tittle {
     font-family: 'Roboto';
@@ -580,6 +584,41 @@ fill: currentColor;
 
 .mail:hover, .mail:focus {
     color: var(--accent-color);
+}
+
+.joined-tittle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.icon-footer-list {
+    margin-top: 16px;
+    justify-content: center;
+    display: flex;
+}
+
+.icon-footer-link {
+    display: flex;
+    margin-right: 10px;
+    color: var(--icon-prymary-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--footer-link-bg-color);
+    color: var(--second-btn-color);
+}
+
+.icon-footer-link:hover, .icon-footer-link:focus {
+    background-color: var(--accent-color);
 }
 
 /* Portfolio html */
