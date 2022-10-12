@@ -18,6 +18,7 @@ body {
     --second-bt-bg:#188CE8;
     --hdr-border-color: #ECECEC;
     --work-card-border-color:#EEEEEE;
+    --features-card-bg: #F5F4FA;
 }
 
 * {
@@ -259,10 +260,35 @@ img {
     width: calc((100%-90px) / 4);
 }
 
+.content-features-box::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-color: var(--features-card-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.content-features-box.icon-sat::before {
+    background-image:url(../images/sat.svg);
+}
+
+.content-features-box.icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.content-features-box.icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.content-features-box.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+}
+
 .content-features-box:not(:last-child) {
     margin-right: 30px;
 
-    display: flex;
     justify-content: space-between;
 }
 
