@@ -19,6 +19,7 @@ body {
     --hdr-border-color: #ECECEC;
     --work-card-border-color:#EEEEEE;
     --features-card-bg: #F5F4FA;
+    --icon-prymary-color: #AFB1B8; 
 }
 
 * {
@@ -260,17 +261,47 @@ img {
     width: calc((100%-90px) / 4);
 }
 
-.content-features-box::before {
-    content: "";
+.icon-sat {
     display: block;
     height: 120px;
     background-color: var(--features-card-bg);
-    background-repeat: no-repeat;
-    background-position: center;
     border-radius: 4px;
     margin-bottom: 30px;
+    text-align: center;
+    padding-top: 25px;
 }
-.content-features-box.icon-sat::before {
+
+.icon-clock {
+    display: block;
+    height: 120px;
+    background-color: var(--features-card-bg);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.icon-diagram {
+    display: block;
+    height: 120px;
+    background-color: var(--features-card-bg);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 25px;
+    }
+
+.icon-astronaut {
+    display: block;
+    height: 120px;
+    background-color: var(--features-card-bg);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+/* .content-features-box.icon-sat::before {
     background-image:url(../images/sat.svg);
 }
 
@@ -284,7 +315,7 @@ img {
 
 .content-features-box.icon-astronaut::before {
     background-image: url(../images/astronaut.svg);
-}
+} */
 
 .content-features-box:not(:last-child) {
     margin-right: 30px;
@@ -470,13 +501,17 @@ img {
     display: inline-block;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--icon-prymary-color);
     border-radius: 4px;
+    text-align: center;
+    padding-top: 16px;
+    color: var(--icon-prymary-color);
 }
 
 .icon {
-fill:red;
+fill: currentColor;
 }
+
 /* 
 .icon-client {
     display: inline-block;
