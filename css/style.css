@@ -185,9 +185,11 @@ body {
 .item>.icon {
     display: flex;
     margin-right: 10px;
+}       
+
+.icon-mail {
+    margin-top: 2px;
 }
-
-
 
 .item:hover, .item:focus {
     color: var(--accent-color);
