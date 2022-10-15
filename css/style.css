@@ -272,60 +272,44 @@ img {
 }
 
 .icon-sat {
-    display: block;
+    display: flex;
     height: 120px;
     background-color: var(--features-card-bg);
     border-radius: 4px;
     margin-bottom: 30px;
-    text-align: center;
-    padding-top: 25px;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon-clock {
-    display: block;
+    display: flex;
     height: 120px;
     background-color: var(--features-card-bg);
     border-radius: 4px;
     margin-bottom: 30px;
-    text-align: center;
-    padding-top: 25px;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon-diagram {
-    display: block;
+    display: flex;
     height: 120px;
     background-color: var(--features-card-bg);
     border-radius: 4px;
     margin-bottom: 30px;
-    text-align: center;
-    padding-top: 25px;
+    align-items: center;
+    justify-content: center;
     }
 
 .icon-astronaut {
-    display: block;
+    display: flex;
     height: 120px;
     background-color: var(--features-card-bg);
     border-radius: 4px;
     margin-bottom: 30px;
-    text-align: center;
-    padding-top: 25px;
+    align-items: center;
+    justify-content: center;
 }
-
-/* .content-features-box.icon-sat::before {
-    background-image:url(../images/sat.svg);
-}
-
-.content-features-box.icon-clock::before {
-    background-image: url(../images/clock.svg);
-}
-
-.content-features-box.icon-diagram::before {
-    background-image: url(../images/diagram.svg);
-}
-
-.content-features-box.icon-astronaut::before {
-    background-image: url(../images/astronaut.svg);
-} */
 
 .content-features-box:not(:last-child) {
     margin-right: 30px;
@@ -461,6 +445,18 @@ img {
 }
 
 /* Clients */
+.icon-client-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+    border: 1px solid var(--icon-prymary-color);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-prymary-color);
+    
+}
 
 .icon-client-link:hover, .icon-client-link:focus {
     color: var(--accent-color);
@@ -484,20 +480,18 @@ img {
     display: flex;
 }
 
+.icon-client {
+    display: flex;
+    height: 92px;
+    /* width: calc((100% - 150px) / 6); */
+    width: calc(100%/6 - 30px/6*5);
+}
+
 .icon-client:not(:last-child) {
     margin-right: 30px;
 }
 
-.icon-client-link {
-    display: inline-block;
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--icon-prymary-color);
-    border-radius: 4px;
-    text-align: center;
-    padding-top: 16px;
-    color: var(--icon-prymary-color);
-}
+
 
 .icon {
 fill: currentColor;
